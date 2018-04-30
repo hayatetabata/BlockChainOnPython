@@ -5,12 +5,11 @@ import unittest
 
 class BlockchainTest(unittest.TestCase):
     def test_create_block(self):
-        index = 0
         nonce = 7
         previous_hash = '1A7CC8AEBDAFF51AC03199242D5DE20F60DF03983D5AC6CAA40270E3DB880484'
         transactions = self.__create_transactions()
         block = {
-            'index': index + 1,
+            'index': 2,
             'timestamp': datetime.now().strftime('%Y/%m/%d'),
             'transactions': transactions,
             'nonce': nonce,

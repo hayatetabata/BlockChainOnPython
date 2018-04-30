@@ -9,6 +9,7 @@ class Blockchain():
         self.current_transactions = []
 
         genesis_block = self.create_block(nonce="", previous_hash="", transactions=[])
+        self.chain.append(genesis_block)
 
     def create_block(self, nonce, previous_hash, transactions):
         block = {
