@@ -46,6 +46,8 @@ class ExecutionBlockChain(unittest.TestCase):
 
         self.assertEquals(len(blockchain.current_transactions), 0)
         self.assertEquals(len(blockchain.chain), 2)
+        self.assertEquals(len(blockchain.current_transactions), 0)
+        self.assertEquals(blockchain.get_previous_block(), new_block)
 
 
 if __name__ == '__main__':
